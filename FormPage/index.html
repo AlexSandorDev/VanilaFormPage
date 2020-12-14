@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Form</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="form">
-      <form id="survey-form" action="index.html" method="post">
+      <form id="survey-form" action="submitted.html" method="POST">
       <div>
           <h2>Personal Information</h2>
 
@@ -30,7 +30,7 @@
 
         <h2>Pareri?</h2>
         <div class="survey">
-            <label class="survey-element">Favourite song
+            <label class="survey-element" >Favourite song
               <select class="select" name="Favourite song" required>
                 <option disabled selected> Select a song </option>
                 <option class="option" value="In Vacanta">In Vacanta</option>
@@ -47,7 +47,7 @@
         <br>
 
         <div class="survey">
-            <label class="survey-element">Least favourite song
+            <label class="survey-element" required>Least favourite song
               <select class="select" name="Favourite song" required>
                 <option disabled selected> Select a song </option>
                 <option class="option" value="In Vacanta">In Vacanta</option>
@@ -129,6 +129,10 @@
                 </label>
               </div>
             </label>
+
+            <label class="survey-element comment">Any comments or suggestions?<textarea></textarea></label>
+
+            <button onclick="submitted.html" class="survey-element button" type="submit" name="button">Submit</button>
 
           </div>
       </form>

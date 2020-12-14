@@ -50,6 +50,12 @@ body::-webkit-scrollbar-thumb
   text-align: center;
 }
 
+h1
+{
+  margin: auto;
+  text-align: center;
+}
+
 .form
 {
   display: flex;
@@ -110,6 +116,7 @@ body::-webkit-scrollbar-thumb
 
 input,select,textarea
 {
+  cursor: pointer;
   background-color: var(--main-color-transparent);
   color:var(--secondary-color);
   box-shadow: .1rem .15rem 0rem  var(--main-color-dark);
@@ -147,19 +154,20 @@ textarea
   height: 10rem;
 }
 
+.select
+{
+  display: flex;
+}
+
 .radiobox
 {
+  cursor: pointer;
   display: grid;
   grid-template-columns: min-content auto;
   grid-gap: 0.5em;
   position:relative;
   padding: .1rem;
   margin-left: 1rem;
-}
-
-.select
-{
-  display: flex;
 }
 
 .radiobox label
@@ -219,6 +227,7 @@ input[type="radio"]:checked+.radiomark
 
 .checkbox
 {
+  cursor: pointer;
   display: grid;
   grid-template-columns: min-content auto;
   grid-gap: 0.5em;
@@ -250,12 +259,6 @@ input[type="checkbox"]:checked+.checkmark
   background: var(--secondary-color);
 }
 
-input[type="checkbox"]:active+.checkbox
-{
-  background: black;
-}
-
-
 .check-span
 {
   display: flex;
@@ -269,17 +272,19 @@ input[type="checkbox"]:active+.checkbox
   border: .1rem solid var(--secondary-color);
 }
 
-.effect-button
-{
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
 @media (max-width:550px)
 {
   .checkmark
   {
     margin-top: .5vw;
   }
+}
+
+.button
+{
+  width: 100%;
+  margin:auto;
+  cursor: pointer;
+  display: block;
+  border: none;
 }
