@@ -147,7 +147,7 @@ textarea:hover,select:hover,input:hover
 select:focus,textarea:focus,input:focus
 {
   outline-color: var(--secondary-color);
-  background-color: var(--main-color);
+  background-color: var(--main-color-dark);
   box-shadow: 0 0 .2rem var(--main-color-dark);
   border-radius: .5rem;
 }
