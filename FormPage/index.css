@@ -173,6 +173,22 @@ select:focus,textarea:focus,input:focus
   border-radius: .5rem;
 }
 
+@media (max-width:360px)
+{
+  .selectbox
+  {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .selectbox select
+  {
+    width: auto !important;
+    margin-top: .2rem;
+  }
+
+}
+
 @media (max-width:600px)
 {
   .comment
