@@ -152,6 +152,21 @@ select:focus,textarea:focus,input:focus
   border-radius: .5rem;
 }
 
+@media (max-width:600px)
+{
+  .comment
+  {
+    padding: .5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  textarea
+  {
+    width: auto !important;
+    margin-top: .5rem;
+  }
+}
 
 textarea
 {
