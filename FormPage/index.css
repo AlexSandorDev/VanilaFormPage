@@ -124,13 +124,18 @@ input,select,textarea
 
 select
 {
-  color:var(--secondary-color-transparent);
+  color:var(--secondary-color);
   border: none;
+}
+
+select:focus
+{
+  color:var(--secondary-color-dark);
 }
 
 option
 {
-  color:var(--secondary-color-transparent);
+  color:var(--secondary-color);
   font-size: clamp(12px,2vw,16px);
 }
 
@@ -287,4 +292,16 @@ input[type="checkbox"]:checked+.checkmark
   cursor: pointer;
   display: block;
   border: none;
+}
+
+.button:hover
+{
+  background-color:var(--secondary-color-transparent);
+  color: var(--main-color);
+}
+
+.button:active
+{
+  background-color: var(--main-color-dark);
+  box-shadow: none;
 }
