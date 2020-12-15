@@ -109,6 +109,27 @@ h1
   color:var(--secondary-color);
 }
 
+.text-input input
+{
+  width:  70%;
+}
+
+@media (max-width:600px)
+{
+  .text-input
+  {
+    flex-direction:column !important;
+    padding: .5rem;
+    justify-content: center;
+  }
+
+  .text-input input
+  {
+    width:auto;
+    margin-top: .2rem;
+  }
+}
+
 .clue
 {
   font-size: clamp(12px,1vw,14px);
@@ -161,7 +182,7 @@ select:focus,textarea:focus,input:focus
     justify-content: center;
   }
 
-  textarea
+  .comment textarea
   {
     width: auto !important;
     margin-top: .5rem;
@@ -177,6 +198,14 @@ textarea
 .select
 {
   display: flex;
+}
+
+@media (max-width:525px)
+{
+  .select
+  {
+    flex-direction: column;
+  }
 }
 
 .radiobox
